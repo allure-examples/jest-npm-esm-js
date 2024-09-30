@@ -1,19 +1,23 @@
 {
-  "name": "allure-jest-circus-example",
+  "name": "jest-npm-esm-js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "pretest": "rimraf ./allure-results",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "allure-jest": "^2.6.0",
-    "jest": "^29.6.4",
-    "jest-circus": "^29.6.4",
+    "@jest/globals": "^29.7.0",
+    "allure-jest": "^3.0.3",
+    "allure-js-commons": "^3.0.3",
+    "jest": "^29.7.0",
+    "jest-circus": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1"
   }
